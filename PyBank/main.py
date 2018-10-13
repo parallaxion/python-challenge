@@ -30,13 +30,21 @@ for row in csvdat:
 
     rowcount += 1
 lenc = len(csvdict)
-print(change)
+f = open("results.txt", "w")
 print("=========================Financial Analysis=============================")
+f.write("=========================Financial Analysis=============================\n")
 print("Total Months: " + str(lenc))
-print("Total: " + str(total))
-print("Average Change +/-: " + str(change/lenc))
+f.write("Total Months: " + str(lenc)+"\n")
+print("Total: " + str(total)+"\n")
+f.write("Total: " + str(total)+"\n")
+print("Average Change +/-: " + str(change/lenc)+"\n")
+f.write("Average Change +/-: " + str(change/lenc)+"\n")
 print("Biggest Profit: " + str(hig))
+f.write("Biggest Profit: " + str(hig)+"\n")
 print("Biggest Loss: " + str(low))
+f.write("Biggest Loss: " + str(low)+"\n")
 print("------------------------------------------------------------------------")
+f.write("------------------------------------------------------------------------\n")
+
 
 
